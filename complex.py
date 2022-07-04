@@ -11,15 +11,13 @@ class Complex:
 
     def __str__(self):
         return str(self.re) + "+" + str(self.im) + "i"
-        
-    def add(self, c1):
+    
+    def subtract(self, c1):
         c = Complex()
-        c.re = self.re + c1.re
-        c.im = self.im + c1.im
+        c.re = self.re - c1.re
+        c.im = self.im - c1.im
         return c
-
 c1 = Complex(1, 2)
 print(c1)
-
 c2 = Complex(2,3)
-print(c1.add(c1,add(c2))
+print(c2.subtract(c1))
