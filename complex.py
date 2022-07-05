@@ -33,18 +33,17 @@ class Complex:
     def __mul__(self, c):
         return self.multiply(c)
 
-c1 = Complex(1, 2)
-print(c1)
+    def __add__(self, c):
+        return self.add(c)
 
+c1 = Complex(1, 2)
 c2 = Complex(2, 3)
-print(c1.add(c2))
+print(c1 + c2)
     
 c1 = Complex(1, 2)
-print(c1)
 c2 = Complex(2,3)
 print(c2.subtract(c1))
         
 c1 = Complex(1, 2)
-print(c1)
 c2 = Complex(2,3)
 print(c1*c2)
